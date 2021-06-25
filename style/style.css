@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap');
+:root {
+    --backgroundBlue: #3187F7;
+    --fontBlue: #184278;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html {
+    font-size: 80%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.custom-shape-divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(116% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom .shape-fill {
+    fill: var(--backgroundBlue);
+}
+
+.custom-shape-divider-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top svg {
+    position: relative;
+    display: block;
+    width: calc(116% + 1.3px);
+    height: 120px;
+}
+
+.custom-shape-divider-top .shape-fill {
+    fill: var(--backgroundBlue);
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+.container--info img {
+    width: 7rem;
+    height: 7rem;
+}
+
+.container--info h2 {
+    font-size: 1.8rem;
+    font-family: nunito;
+    color: var(--fontBlue);
+}
+
+.container--info p {
+    font-size: 1.2rem;
+    font-family: nunito;
+    color: var(--fontBlue);
+}
+
+.container .botonRigth {
+    display: flex;
+    padding: 3rem 2rem 0 0;
+    align-self: flex-end;
+}
+
+.botonRigth a {
+    background-color: #184278;
+    padding: 1.2rem;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.65) 5px 6px 4px;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: ease-out 0.4s;
+    outline: none;
+    z-index: 1;
+}
+
+
+/** Login **/
+
+.containerLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0 0 1rem;
+    border-radius: 5px;
+}
+
+.containerLogin h3 {
+    font-size: 2rem;
+    color: var(--fontBlue);
+}
+
+.containerLogin--data input {
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: #f0f0f0;
+    text-align: center;
+    color: var(--fontBlue);
+}
+
+.containerLogin--data input:hover {
+    background-color: var(--fontBlue);
+    font-weight: bold;
+    color: #fff;
+}
+
+.containerLogin--forgetContraseña {
+    padding-top: 0.5rem;
+}
+
+.containerLogin--forgetContraseña a {
+    color: var(--fontBlue);
+    font-weight: bold;
+}
+
+.container--redes {
+    padding: 1rem 0 1rem 0;
+}
+
+.container--redes img {
+    margin: 0 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.container--redes {
+    display: flex;
+    align-self: center;
+}
+
+.container--button {
+    margin: 1rem 0;
+}
+
+.container--button button {
+    padding: 1rem 2rem;
+    background-color: var(--backgroundBlue);
+    font-weight: bold;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.container--registro span a {
+    border-bottom: 1px solid var(--fontBlue);
+    color: var(--fontBlue);
+}
+
+
+/** Recupear contraseña **/
+
+.containerRecuperar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0 0 1rem;
+    border-radius: 5px;
+}
+
+.containerRecuperar h3 {
+    font-size: 1.5rem;
+    color: var(--fontBlue);
+}
+
+.containerRecuperar input {
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: #f0f0f0;
+    text-align: center;
+    color: black;
+}
+
+.containerRecuperar--texto {
+    width: 90%;
+    margin: 1rem 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.containerRecuperar--boton {
+    margin: 1rem 0;
+}
+
+.containerRecuperar--boton button {
+    padding: 1rem 2rem;
+    background-color: var(--backgroundBlue);
+    font-weight: bold;
+    color: #fff;
+    border-radius: 20px;
+}
+
+
+/** Media querys **/
+
+@media (min-width: 494px) {
+    .container {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1.5rem 2rem 0 2rem;
+    }
+    .container .botonRigth {
+        display: flex;
+        padding: 0rem 2rem 0 0;
+        align-self: flex-end;
+    }
+    .botonRigth a {
+        padding: 1.2rem;
+    }
+}
+
+@media (min-width: 767px) {
+    .custom-shape-divider-top svg {
+        width: calc(145% + 1.3px);
+        height: 92px;
+    }
+    .custom-shape-divider-bottom svg {
+        width: calc(145% + 1.3px);
+        height: 92px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding-left: 4rem;
+    }
+    .container--info img {
+        width: 15rem;
+        height: 15rem;
+    }
+    .container--info h2 {
+        font-size: 2.5rem;
+    }
+    .container--info p {
+        font-size: 2rem;
+    }
+    .container .botonRigth {
+        padding: 0 4rem 0 0;
+    }
+    .botonRigth a {
+        padding: 1.6rem;
+        font-size: 1.5rem;
+        border-radius: 30px;
+        box-shadow: rgba(0, 0, 0, 0.65) 8px 8px 6px;
+        color: #fff;
+    }
+    .containerLogin {
+        padding: 7rem 0 0 1rem;
+        border-radius: 5px;
+    }
+    .containerLogin h3 {
+        font-size: 3.5rem;
+    }
+    .containerLogin--data input {
+        padding: 1rem;
+        margin-top: 1.2rem;
+    }
+    .containerLogin--forgetContraseña {
+        padding-top: 1rem;
+    }
+    .containerLogin--forgetContraseña a {
+        font-size: 1rem;
+    }
+    .container--redes img {
+        margin: 0 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .container--button {
+        margin: 1.5rem 0;
+    }
+    .container--button button {
+        padding: 1rem 2rem;
+        background-color: var(--backgroundBlue);
+        color: #fff;
+        border-radius: 20px;
+    }
+    .containerRecuperar {
+        padding: 8rem 0 0 1rem;
+    }
+    .containerRecuperar h3 {
+        font-size: 2.5rem;
+    }
+    .containerRecuperar input {
+        padding: 1rem;
+        margin-top: 1.5rem;
+    }
+    .containerRecuperar--texto p {
+        font-size: 1.2rem;
+    }
+    .containerRecuperar--boton {
+        margin: 1rem 0;
+    }
+    .containerRecuperar--boton button {
+        font-size: 1.2rem;
+    }
+}
